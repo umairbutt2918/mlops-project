@@ -1,0 +1,8 @@
+Flask==2.2.5
+numpy
+scipy
+scikit-learn
+gunicorn
+prometheus-client
+dvc
+apache-airflow-providers-http

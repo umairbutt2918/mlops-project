@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sentiment Classifier</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Sentiment Classifier</h1>
+    {% if error %}<div class="alert error">{{ error }}</div>{% endif %}
+    <form method="post">
+      <label for="model">Select Model</label>
+      <select id="model" name="model">
+        <option>Logistic Regression</option>
+        <option>Gradient Boosting</option>
+      </select>
+      <label for="review">Enter a Movie Review</label>
+      <textarea id="review" name="review">{{ review|default('') }}</textarea>
+      <button type="submit">Classify</button>
+    </form>
+    {% if sentiment %}<div class="result">Prediction: <strong>{{ sentiment }}</strong></div>{% endif %}
+  </div>
+</body>
+</html>

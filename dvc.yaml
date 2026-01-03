@@ -1,0 +1,10 @@
+stages:
+  train:
+    cmd: python train_and_serialize.py
+    deps:
+      - train_and_serialize.py
+      - models_utils.py
+    outs:
+      - vectorizer.pkl
+      - logistic_regression_model.pkl
+      - gradient_boosting_model.pkl

@@ -1,0 +1,8 @@
+body { background: #8b0000; font-family: Arial, sans-serif; color: #fff; }
+.container { width: 720px; margin: 40px auto; background: #f3f3f3; color: #000; padding: 24px; border-radius: 8px; }
+h1 { text-align: center; color: #200; }
+label { display:block; margin-top: 12px; font-weight: bold; }
+select, textarea, button { width: 100%; padding: 10px; margin-top: 6px; border-radius: 4px; border: 1px solid #ccc; }
+button { background: #0066cc; color: #fff; font-weight: bold; cursor: pointer; }
+.result { margin-top: 16px; padding: 12px; background: #ffeb3b; color: #000; border-radius: 4px; font-size: 20px; }
+.alert.error { background: #ffcccc; color: #900; padding: 8px; margin-bottom: 8px; border-radius: 4px; }
